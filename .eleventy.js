@@ -13,6 +13,8 @@ module.exports = function (eleventyConfig) {
   const markdownEngine = markdownIt(markdownItOpts)
   eleventyConfig.setLibrary('md', markdownEngine)
 
+  eleventyConfig.addWatchTarget('./src/_includes/')
+
   return {
     dir: {
       input: 'src',
