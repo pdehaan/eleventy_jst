@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.11ty.js
+layout: layouts/_default/base.11ty.js
 ---
 
 # Testing from MD
