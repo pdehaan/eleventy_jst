@@ -4,6 +4,7 @@ module.exports = {
     <nav>
       Header stuff (nav) to come soon
     </nav>
+    <hr />
     `
   }
 }
