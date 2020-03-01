@@ -45,17 +45,17 @@ exports.render = function (data) {
   ${data.title != "The obligatory About Me page"
     ? `<div class="bg-dark">
     <h3 class="ctr wht"><a href="/posts" style="border-bottom: 0;">Other posts</a></h3>
-    ${nextPost.url !== null
+    ${data.nextPost && data.nextPost.url !== null
       ? `<p class="ctr">
         <strong>Next</strong>: 
-        <a class="next" href=${nextPost.url}>${nextPost.data.title}</a>
+        <a class="next" href=${data.nextPost.url}>${data.nextPost.data.title}</a>
       </p>`
       : ``
     }
-    ${prevPost.url !== null
+    ${data.prevPost && data.prevPost.url !== null
       ? `<p class="ctr">
         <strong>Previous</strong>: 
-        <a class="previous" href=${prevPost.url}>${prevPost.data.title}</a>
+        <a class="previous" href=${data.prevPost.url}>${data.prevPost.data.title}</a>
       </p>`
       : ``
     }
